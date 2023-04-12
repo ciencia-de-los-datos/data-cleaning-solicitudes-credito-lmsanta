@@ -48,7 +48,6 @@ def clean_data():
     df.monto_del_credito = df.monto_del_credito.str.replace(",", "", regex=False)
     df.monto_del_credito = df.monto_del_credito.astype('float')
 
-
     df.línea_credito = df.línea_credito.str.lower()
     df.línea_credito = df.línea_credito.astype('category')
     df.línea_credito = df.línea_credito.str.replace("-", " ", regex=False)
